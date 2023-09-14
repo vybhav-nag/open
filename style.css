@@ -12,21 +12,24 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 header {
     background-color: #0074d9;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 40px 0;
 }
 
 h1 {
     font-size: 36px;
 }
 
-p {
+.subtitle {
     font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 section {
@@ -35,6 +38,20 @@ section {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.cgpa {
+    font-weight: bold;
+    margin-top: 5px;
 }
 
 ul {
@@ -49,4 +66,28 @@ li {
 a {
     text-decoration: none;
     color: #0074d9;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
 }
